@@ -19,6 +19,11 @@ https://broadbandusa.ntia.gov/rss-feeds
 https://rss.com/blog/how-to-create-an-rss-feed/
 
 
+Instructions:
+
+        1. Download repository zip file
+        2. Open in vs code or similar editor
+        3. Run as live server
 
 *#
 
