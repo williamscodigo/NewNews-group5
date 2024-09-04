@@ -25,8 +25,19 @@ Instructions:
         2. Open in vs code or similar editor
         3. Run as live server
 
-NewNews Homepage Image:
+Here is what your NewNews Homepage should like on your initial visit:
 ![Screen Shot 2024-09-04 at 4 56 39 PM](https://github.com/user-attachments/assets/1fd29a8b-cfe0-46bf-a834-66084fd04239)
 
-*#
+
+
+And here is a link to the site:
+
+    Link: http://127.0.0.1:5500/index.html
+
+
+Thank you for taking a look at our program. We hope you like it and it serves you well!
+
+-Team 5
+
+
 
