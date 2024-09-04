@@ -25,5 +25,8 @@ Instructions:
         2. Open in vs code or similar editor
         3. Run as live server
 
+NewNews Homepage Image:
+![Screen Shot 2024-09-04 at 4 56 39 PM](https://github.com/user-attachments/assets/1fd29a8b-cfe0-46bf-a834-66084fd04239)
+
 *#
 
