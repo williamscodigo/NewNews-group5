@@ -1,5 +1,5 @@
 # NewNews
-RSS feed news aggregator 
+New News - The RSS Feed News Aggregator 
 
 New News is a webpage designed to aggregate RSS News feeds input by the user into a single scrolling window, sorted from latest to oldest. Its purpose is to provide a personalized source of news for the reader, reducing the need to sift through meaningless or off-topic headlines. One should be able to sit down with their morning coffee and have the latest economics, finance, medical, pop culture or strictly local news at their hands without the need to wade through different sites and attention stealing side-stories. New News allows you to put together any combinaton of specific news subcategories together into one place for easy access. This goal is achieved using html/CSS, JavaScript, and the Bulma CSS framework, while also incorporating RSS code provided by news sources of choice. 
 
