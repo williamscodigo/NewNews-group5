@@ -27,17 +27,26 @@
         </section>
         <!--  Header-->
         <section class="column">
-            <header>
+            <br>
                 <h1 class="title is-1" style="font-family: sans-serif; text-shadow: 2px 2px gray;">New News</h1>
+                <h2 class="subtitle" style="font-family: sans-serif; text-shadow: 1px 1px gray;">The customizable news feed for YOU!</h2>
             </header>
-         <!--Button -->
-            <section class="link">
-                <input class="input" type="text" name="RSS" placeholder="Enter RSS link" required="required"
-                    style="max-width: 90%">
-                <button class="button is-link" type="submit" value="input">Add RSS</button>
-            </section>
+
+        <!--button-->
+            <button class="button is-link" id="addRss" type="click">Add RSS Feed</button>
+        <!--Modal -->
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content has-backgroud-white py-10 px-5">
+                    <form id="form">
+                        <input class="input" id="userInput" type="text" name="RSS" placeholder="Enter RSS link" required="required"
+                        style="max-width: 90%">
+                    <button class="button is-link" type="submit">Add RSS</button>
+                    </form>
+                </div>
+            </div>
          <!--content -->
-            <section class="section-1">
+            <!-- <section class="section-1">
                 <h3 class="title is-4">How RSS works:</h3>
                 <ul>
                     <li>Step 1: Content producers or website owners create RSS feeds for their websites. These feeds
@@ -61,7 +70,13 @@
                         in the
                         feed reader, which allows users to access the updated content. Users can visit the website by
                         clicking the provided link if they would want to read the entire text.</li>
-                </ul>
+                </ul> -->
+
+                <div id = "feed" class = "feed">
+
+                </div>
+                
+
             </section>
         </section>
     </main>
@@ -72,6 +87,7 @@
         <a href="#" class="fa fa-youtube fa-2x"></a>
         <a href="#" class="fa fa-instagram fa-2x"></a>
     </footer>
+<script src="script.js"></script>
 </body>
 
 </html>
