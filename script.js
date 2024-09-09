@@ -3,9 +3,6 @@ let xmlArray = [];
 const newsArray = [];
 const input = document.getElementById("form");
 
-//In case of a page reload or when the page is revisited, pulls locally saved array info.
-xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray")); 
-
 //Pulls data from xml rss feed that the user inputs
 const displayXML = function(xmlArray) {
 
@@ -87,6 +84,10 @@ modalBg.addEventListener('click', () => {
     modal.classList.remove('is-active');
 });
 
-
+//Running function
 displayXML(xmlArray);
+
+//In case of a page reload or when the page is revisited, pulls locally saved array info.
+xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray")); 
+
 console.log(newsArray);
