@@ -27,6 +27,7 @@ Instructions:
 
 Here is what your NewNews Homepage should like on your initial visit:
 ![Screen Shot 2024-09-04 at 4 56 39 PM](https://github.com/user-attachments/assets/1fd29a8b-cfe0-46bf-a834-66084fd04239)
+![Screen Shot 2024-09-09 at 6 01 08 PM](https://github.com/user-attachments/assets/351dda18-5265-4d78-9cc5-3da4018f2e09)
 
 
 
