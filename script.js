@@ -25,30 +25,42 @@ const displayXML = function(xmlArray) {
                     article.link = item.querySelector('link').textContent;
                     article.description = item.querySelector('description').textContent;
                     article.pubDate = item.querySelector('pubDate').textContent;
-                    // article.image = item.querySelectorAll("media\\:content");
-                    const mediaContentElement = item.querySelector("media\\:content");
-                    // article.image = mediaContentElement.getAttribute("url");
 
-                    console.log(article.image);
-                    console.log(typeof article.pubDate);
-                    console.log(article);
+                    // failed attempt to import images from an xml file
+                    // const media = item.querySelector('media\\:content');
+                    // console.log(media);
+                    // const mediaContentElement = item.querySelectorAll("media").textContent;
+                    // art icle.image = media.getAttribute('url');
+
                     newsArray.push(article);
 
                     //creating nested Elmements
                     const feed = document.getElementById("feed");
                     feed.classList.add("parent");
-                    const section = document.createElement("section");
-                    section.classList.add("article");
-                    feed.appendChild(section);
+                    const div = document.createElement("div");
+                    div.classList.add("article");
+                    div.setAttribute("href", article.link);
+                    feed.appendChild(div);
                     const ul = document.createElement("ul");
-                    section.appendChild(ul);
+                    div.appendChild(ul);
                     const li = document.createElement("li");
                     ul.appendChild(li);
                     const a = document.createElement("a");
-                    a.textContent = article.title;
                     a.setAttribute("href", article.link);
+                    a.classList.add("fill-div");
                     li.appendChild(a);
+                    const h2 = document.createElement('h2');
+                    h2.textContent = article.title;
+                    li.appendChild(h2);
                     const img = document.createElement("img");
+                    img.src = 'https://picsum.photos/200/300'; 
+                    li.appendChild(img);
+                    const p  = document.createElement("p");
+                    p.classList.add("description");
+                    p.textContent = article.description;
+                    li.appendChild(p);
+
+                    
                 }; 
             });    
         };
@@ -74,6 +86,7 @@ addRss.addEventListener('click', () => {
 modalBg.addEventListener('click', () => {
     modal.classList.remove('is-active');
 });
+
 
 displayXML(xmlArray);
 console.log(newsArray);
