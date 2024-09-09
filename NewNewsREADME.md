@@ -14,8 +14,11 @@ How it works:
 
 If one is having trouble understanding what an RSS feed is, does and where to get one, here are some resources:
 https://rss.com/blog/how-do-rss-feeds-work/
+
 https://support.microsoft.com/en-us/office/what-are-rss-feeds-e8aaebc3-a0a7-40cd-9e10-88f9c1e74b97
+
 https://broadbandusa.ntia.gov/rss-feeds
+
 https://rss.com/blog/how-to-create-an-rss-feed/
 
 
