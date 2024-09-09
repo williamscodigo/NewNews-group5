@@ -36,7 +36,7 @@ Here is what your NewNews Homepage should like on your initial visit:
 
 And here is a link to the site:
 
-    Link: http://127.0.0.1:5500/index.html
+    Link: https://ignobleknight.github.io/NewNews/
 
 
 Thank you for taking a look at our program. We hope you like it and it serves you well!
