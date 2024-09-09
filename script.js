@@ -61,6 +61,7 @@ const displayXML = function(xmlArray) {
                 }; 
             });    
         };
+    xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray")); 
  };
 
 input.addEventListener("submit", (event) => {
@@ -84,10 +85,10 @@ modalBg.addEventListener('click', () => {
     modal.classList.remove('is-active');
 });
 
-//Running function
+//Running function  
 displayXML(xmlArray);
 
 //In case of a page reload or when the page is revisited, pulls locally saved array info.
-xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray")); 
+// xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray")); 
 
 console.log(newsArray);
