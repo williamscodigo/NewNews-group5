@@ -1,16 +1,9 @@
 //variables definitions
 let xmlArray = [];
 // localStorage.setItem("xmlLocalArray", JSON.stringify(xmlArray));
-// xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray")); 
+xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray")) || []; 
 const newsArray = [];
 const input = document.getElementById("form");
-
-// if(xmlArray){
-//     localStorage.setItem("xmlLocalArray", JSON.stringify(xmlArray));
-//     xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray")); 
-// }
-
-
 
 //Pulls data from xml rss feed that the user inputs
 const displayXML = function(xmlArray) {
@@ -64,8 +57,6 @@ const displayXML = function(xmlArray) {
                     p.classList.add("description");
                     p.textContent = article.description;
                     li.appendChild(p);
-
-                    
                 }; 
             });    
         };
