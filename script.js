@@ -1,11 +1,19 @@
 //variables definitions
 let xmlArray = [];
+// localStorage.setItem("xmlLocalArray", JSON.stringify(xmlArray));
+// xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray")); 
 const newsArray = [];
 const input = document.getElementById("form");
 
+// if(xmlArray){
+//     localStorage.setItem("xmlLocalArray", JSON.stringify(xmlArray));
+//     xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray")); 
+// }
+
+
+
 //Pulls data from xml rss feed that the user inputs
 const displayXML = function(xmlArray) {
-
         //parses the xml file
         for(i = 0; i < xmlArray.length; i++) {
             fetch(xmlArray[i]).then(response => {  
@@ -64,6 +72,7 @@ const displayXML = function(xmlArray) {
     xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray")); 
  };
 
+ //user input
 input.addEventListener("submit", (event) => {
     event.preventDefault(); 
     const iv = document.getElementById("userInput").value;
@@ -72,6 +81,13 @@ input.addEventListener("submit", (event) => {
     localStorage.setItem("xmlLocalArray", JSON.stringify(xmlArray));
     xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray"));
     displayXML(xmlArray);
+});
+
+//clear memory button
+const clearMem = document.querySelector('#clearRss');
+clearMem.addEventListener('click', () => {
+    localStorage.clear();
+    location.reload();
 });
 
 //modal
@@ -85,6 +101,8 @@ modalBg.addEventListener('click', () => {
     modal.classList.remove('is-active');
 });
 
+
+
 //Running function  
 displayXML(xmlArray);
 
@@ -92,3 +110,4 @@ displayXML(xmlArray);
 // xmlArray = JSON.parse(localStorage.getItem("xmlLocalArray")); 
 
 console.log(newsArray);
+
